@@ -1,9 +1,8 @@
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+body {
+    font-family: "Trirong";
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 caption {
@@ -12,19 +11,75 @@ caption {
     font-weight: bold;
 }
 
+.center-txt {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+/* กำหนดภาพ */
+.personal-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.personal-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: dotted;
+}
+
+/* แถบวัดพลัง ถาม ChatGpt */
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #7469B6;
+    text-align: right;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* รายละเอียดภาพรวมของตาราง */
+table {
+    border-collapse: collapse;
+    /* border: 1px solid rgb(140 140 140); */
+    width: 50%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.tdborder {
+    border: 2px solid rgb(140 140 140);
+}
+
 thead,
 tfoot {
     background-color: rgb(228 240 245);
 }
 
+/* ลักษณะในตารางที่แสดง */
 th,
 td {
-    border: 1px solid rgb(160 160 160);
+    /* border: 2px solid rgb(160 160 160); */
     padding: 8px 10px;
+    /* display: table-cell; */
 }
 
+/* ข้อความข้างใน ตาราง : td */
 td:last-of-type {
-    text-align: center;
+    text-align: left;
 }
 
 tbody>tr:nth-of-type(even) {
@@ -37,4 +92,32 @@ tfoot th {
 
 tfoot td {
     font-weight: bold;
+}
+
+hr {
+    border: 1px solid #D14D72;
+    border-width: 1px;
+    width: 30%;
+    margin: auto;
+    border-style: dotted;
+}
+
+h1 {
+    margin: 2px;
+}
+
+h2 {
+    margin: 2px;
+}
+
+li {
+    margin: 2px;
+}
+
+ul {
+    margin: 2px;
+}
+
+ol {
+    margin: 2px;
 }
